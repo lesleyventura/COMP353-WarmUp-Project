@@ -38,7 +38,7 @@ CREATE TABLE ClubMembers (
     Province VARCHAR(50) NOT NULL,
     PostalCode VARCHAR(10) NOT NULL,
     FamilyMemberID INT NOT NULL,
-    FOREIGN KEY (FamilyMemberID) REFERENCES FamilyMembers(FamilyMemberID) ON DELETE CASCADE,
+    FOREIGN KEY (FamilyMemberID) REFERENCES FamilyMembers(FamilyMemberID) ON DELETE CASCADE
 );
 
 CREATE TABLE FamilyMembers (
