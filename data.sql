@@ -13,16 +13,16 @@ VALUES
 
 INSERT INTO FamilyMembers (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, Email, LocationID) 
 VALUES 
-('Michael', 'Johnson', '1975-02-20', '345-67-8901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'michael.johnson@myvc.com', 1),
-('Sarah', 'Williams', '1982-07-15', '456-78-9012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 2),
-('David', 'Smith', '1980-05-30', '567-89-0123', 'M7890123456', '514-555-6666', '456 Pine St', 'Quebec City', 'QC', 'G1V1V1', 'david.smith@myvc.com', 3),
-('Emily', 'Martin', '1978-08-25', '678-90-1234', 'M8901234567', '450-666-7777', '789 Cedar Rd', 'Sherbrooke', 'QC', 'J1K1K1', 'emily.martin@myvc.com', 4),
-('Daniel', 'Brown', '1973-10-12', '789-01-2345', 'M9012345678', '819-777-8888', '101 Spruce Ave', 'Gatineau', 'QC', 'J8X8X8', 'daniel.brown@myvc.com', 5),
-('Olivia', 'Lefebvre', '1985-12-07', '890-12-3456', 'M0123456789', '819-888-9999', '202 Willow Ln', 'Trois-Rivières', 'QC', 'G8Y8Y8', 'olivia.lefebvre@myvc.com', 6),
-('James', 'Dubois', '1976-03-18', '901-23-4567', 'M1234567890', '450-999-0000', '303 Birch Rd', 'Montreal', 'QC', 'H1A2B3', 'james.dubois@myvc.com', 7),
-('Sophia', 'Tremblay', '1988-11-02', '012-34-5678', 'M2345678901', '514-222-3333', '404 Walnut St', 'Laval', 'QC', 'H3C3C3', 'sophia.tremblay@myvc.com', 8),
-('William', 'Gagnon', '1981-06-09', '123-45-6789', 'M3456789012', '438-333-4444', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 'william.gagnon@myvc.com', 9),
-('Charlotte', 'Roy', '1979-09-21', '234-56-7890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10);
+('Michael', 'Johnson', '1975-02-20', '345678901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'michael.johnson@myvc.com', 1),
+('Sarah', 'Williams', '1982-07-15', '456789012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 2),
+('David', 'Smith', '1980-05-30', '567890123', 'M7890123456', '514-555-6666', '456 Pine St', 'Quebec City', 'QC', 'G1V1V1', 'david.smith@myvc.com', 3),
+('Emily', 'Martin', '1978-08-25', '678901234', 'M8901234567', '450-666-7777', '789 Cedar Rd', 'Sherbrooke', 'QC', 'J1K1K1', 'emily.martin@myvc.com', 4),
+('Daniel', 'Brown', '1973-10-12', '789012345', 'M9012345678', '819-777-8888', '101 Spruce Ave', 'Gatineau', 'QC', 'J8X8X8', 'daniel.brown@myvc.com', 5),
+('Olivia', 'Lefebvre', '1985-12-07', '890123456', 'M0123456789', '819-888-9999', '202 Willow Ln', 'Trois-Rivières', 'QC', 'G8Y8Y8', 'olivia.lefebvre@myvc.com', 6),
+('James', 'Dubois', '1976-03-18', '901234567', 'M1234567890', '450-999-0000', '303 Birch Rd', 'Montreal', 'QC', 'H1A2B3', 'james.dubois@myvc.com', 7),
+('Sophia', 'Tremblay', '1988-11-02', '012345678', 'M2345678901', '514-222-3333', '404 Walnut St', 'Laval', 'QC', 'H3C3C3', 'sophia.tremblay@myvc.com', 8),
+('William', 'Gagnon', '1981-06-09', '123456789', 'M3456789012', '438-333-4444', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 'william.gagnon@myvc.com', 9),
+('Charlotte', 'Roy', '1979-09-21', '234567890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10);
 
 INSERT INTO ClubMembers (FirstName, LastName, DateOfBirth, Height, Weight, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, FamilyMemberID)
 VALUES
