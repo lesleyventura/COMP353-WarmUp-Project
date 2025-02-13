@@ -11,7 +11,7 @@ VALUES
 ('Gatineau Branch', '333 Hull Rd', 'Gatineau', 'QC', 'J8X 3X3', '819-777-3333', 'www.gatineauvolleyball.ca', 'Branch', 125),
 ('Trois-Rivières Branch', '777 St-Maurice Blvd', 'Trois-Rivières', 'QC', 'G8Y 4P4', '819-555-7777', 'www.trvolleyball.ca', 'Branch', 135);
 
-INSERT INTO FamilyMembers (FirstName, LastName, DateOfBirth, SSN, MedicareNumber, PhoneNumber, Address, City, Province, PostalCode, Email, LocationID) 
+INSERT INTO FamilyMembers (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, PhoneNumber, Address, City, Province, PostalCode, Email, LocationID) 
 VALUES 
 ('Michael', 'Johnson', '1975-02-20', '345-67-8901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'michael.johnson@myvc.com', 1),
 ('Sarah', 'Williams', '1982-07-15', '456-78-9012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 2),
