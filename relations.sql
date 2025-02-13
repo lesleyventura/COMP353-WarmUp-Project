@@ -39,7 +39,6 @@ CREATE TABLE ClubMembers (
     PostalCode VARCHAR(10) NOT NULL,
     FamilyMemberID INT NOT NULL,
     FOREIGN KEY (FamilyMemberID) REFERENCES FamilyMembers(FamilyMemberID) ON DELETE CASCADE,
-    CHECK (YEAR(CURDATE()) - YEAR(DateOfBirth) BETWEEN 11 AND 18)
 );
 
 CREATE TABLE FamilyMembers (
