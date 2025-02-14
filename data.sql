@@ -13,7 +13,7 @@ VALUES
 
 INSERT INTO FamilyMembers (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, Email, LocationID) 
 VALUES 
-('Michael', 'Johnson', '1975-02-20', '345678901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'michael.johnson@myvc.com', 1),
+('Eric', 'Anderson', '1975-02-20', '345678901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'eric.anderson@email.com', 1),
 ('Sarah', 'Williams', '1982-07-15', '456789012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 2),
 ('David', 'Smith', '1980-05-30', '567890123', 'M7890123456', '514-555-6666', '456 Pine St', 'Quebec City', 'QC', 'G1V1V1', 'david.smith@myvc.com', 3),
 ('Emily', 'Martin', '1978-08-25', '678901234', 'M8901234567', '450-666-7777', '789 Cedar Rd', 'Sherbrooke', 'QC', 'J1K1K1', 'emily.martin@myvc.com', 4),
@@ -23,6 +23,8 @@ VALUES
 ('Sophia', 'Tremblay', '1988-11-02', '012345678', 'M2345678901', '514-222-3333', '404 Walnut St', 'Laval', 'QC', 'H3C3C3', 'sophia.tremblay@myvc.com', 8),
 ('William', 'Gagnon', '1981-06-09', '123456789', 'M3456789012', '438-333-4444', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 'william.gagnon@myvc.com', 9),
 ('Charlotte', 'Roy', '1979-09-21', '234567890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10);
+('Michael', 'Johnson', '1982-04-10', '456175012', 'M6843795345', '514-555-6789', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 'michael.j@email.com', 1),
+('Emily', 'Davis', '1979-11-25', '123396789', 'M1234463960', '514-444-9999', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 'emily.d@email.com', 1);
 
 INSERT INTO ClubMembers (FirstName, LastName, DateOfBirth, Height, Weight, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, FamilyMemberID)
 VALUES
@@ -36,6 +38,8 @@ VALUES
 ('Ava', 'Tremblay', '2009-08-21', 168, 65, '234567890', 'M4567890123', '514-111-2222', '404 Walnut St', 'Laval', 'QC', 'НЗСЗСЗ', 8),
 ('Ethan', 'Gagnon', '2010-12-05', 172, 67, '345678901', 'M5678901234', '438-444-5555', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 9),
 ('Charlotte', 'Roy', '2012-06-09', 157, 52, '456789012', 'М6789012345', '514-666-7777', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 10);
+('Liam', 'Johnson', '2011-06-20', 165, 55, '789012093', 'M2637823456', '438-222-3333', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 11),  
+('Sophia', 'Davis', '2013-09-18', 150, 43, '547567890', 'M2349372501', '438-777-8888', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 12);  
 
 INSERT INTO Payments (ClubMemberID, PaymentDate, AmountPaid, PaymentMethod, MembershipYear, InstallmentNumber)
 VALUES
@@ -87,7 +91,9 @@ VALUES
 (7, 7, '2024-01-01', '2024-05-31'),
 (8, 8, '2024-01-01', NULL),
 (9, 9, '2023-01-01', NULL),
-(10, 10, '2020-01-01', NULL);
+(10, 10, '2020-01-01', NULL),
+(11, 1, '2025-02-13', NULL),
+(12, 1, '2025-02-13', NULL);
 
 INSERT INTO FamilyGoesTo (FamilyMemberID, LocationID, StartDate, EndDate)
 VALUES
@@ -100,7 +106,9 @@ VALUES
 (7, 1, '2024-01-06', NULL),
 (8, 3, '2023-10-01', '2023-12-31'),
 (9, 2, '2024-02-10', NULL),
-(10, 1, '2023-09-15', '2024-01-20');
+(10, 1, '2023-09-15', '2024-01-20'),
+(11, 1, '2025-02-13', NULL),
+(12, 1, '2025-02-13', NULL);
 
 INSERT INTO FamilyRelation (ClubMemberID, FamilyMemberID, Relationship)
 VALUES
@@ -113,4 +121,6 @@ VALUES
 (7, 8, 'Father'), 
 (8, 9, 'Mother'),
 (9, 10, 'Other'),
-(10, 2, 'Mother');
+(10, 2, 'Mother'),
+(11, 11, 'Father'),
+(12, 12, 'Mother');
