@@ -75,7 +75,7 @@ VALUES
 ('Isabelle', 'Tremblay', '1982-06-25', '901234567', 'M7788990011', '450-999-0000', '606 Spruce Ave', 'Montreal', 'QC', 'HIAZA2', 'isabelle.tremblay@myvc.com', 'Deputy Manager', 'Volunteer'), 
 ('Marc', 'Gagnon', '1992-03-14', '012345678', 'M8899001122', '514-000-1111', '707 Redwood St', 'Laval', 'QC', 'H7A3A3', 'marc.gagnon@myvc.com', 'Other', 'Volunteer'),
 ('Martin', 'Beau', '1994-06-17', '658204618', 'M4892004720', '514-675-1790', '101 Jean-Talon St', 'Montreal, 'QC', 'H5K26P', 'martin.beau@myvc.com', 'Coach', 'Salaried'),
-('Johnson', 'Do', '1990-02-15', '567890113', 'M7788990015', '819-777-8885', '400 Willow Ln', 'Quebec City', 'QC', 'J1K6K6', 'jogn.do@myvc.com', 'Other', 'Salaried';
+('Johnson', 'Do', '1990-02-15', '567890113', 'M7788990015', '819-777-8885', '400 Willow Ln', 'Quebec City', 'QC', 'J1K6K6', 'jogn.do@myvc.com', 'Other', 'Salaried');
 
 INSERT INTO WorksAt (PersonnelID, LocationID, StartDate, EndDate)
 VALUES
