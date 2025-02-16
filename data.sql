@@ -30,7 +30,7 @@ INSERT INTO ClubMembers (FirstName, LastName, DateOfBirth, Height, Weight, SIN, 
 VALUES
 ('Jake', 'Johnson', '2007-06-15', 170, 65, '567890123', 'M7890123456', '514-555-6666', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 1), 
 ('Emily', 'Williams', '2008-09-22', 160, 55, '678901234', 'M8901234567', '438-666-7777', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 2), 
-('Daniel', 'Smith', '2009-05-12', 175, 70, '789012345', 'M9012345678', '514-777-8888', '456 Pine St', 'Quebec City', 'QC', 'GIVIV1', 3), 
+('Daniel', 'Smith', '2009-05-12', 175, 70, '789012345', 'M9012345678', '514-777-8888', '456 Pine St', 'Quebec City', 'QC', 'GIVIV1', 1), 
 ('Olivia', 'Martin', '2010-03-25', 155, 50, '890123456', 'M0123456789', '450-888-9999', '789 Cedar Rd', 'Sherbrooke', 'QC', 'J1K1K1', 4), 
 ('Lucas', 'Brown', '2007-07-18', 180, 75, '901234567', 'M1234567890', '819-999-0000', '101 Spruce Ave', 'Gatineau', 'QC', 'J8X8X8', 5),
 ('Sophia', 'Lefebvre', '2011-11-30', 162, 58, '012345678', 'M2345678901', '819-222-3333', '202 Willow Ln', 'Trois-Rivières', 'QC', 'G8Y8Y8', 6), 
@@ -39,7 +39,8 @@ VALUES
 ('Ethan', 'Gagnon', '2010-12-05', 172, 67, '345678901', 'M5678901234', '438-444-5555', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 9),
 ('Charlotte', 'Roy', '2012-06-09', 157, 52, '456789012', 'М6789012345', '514-666-7777', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 10);
 ('Liam', 'Johnson', '2011-06-20', 165, 55, '789012093', 'M2637823456', '438-222-3333', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 11),  
-('Sophia', 'Davis', '2013-09-18', 150, 43, '547567890', 'M2349372501', '438-777-8888', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 12);  
+('Sophia', 'Davis', '2013-09-18', 150, 43, '547567890', 'M2349372501', '438-777-8888', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 12),
+('Joe', 'Lewis', '2011-02-19', 167, 60, '576849305', 'M34594720386', '514-859-0693', '349 Surrey St', 'Montreal', 'QC', 'H7S 1L4', 3);
 
 INSERT INTO Payments (ClubMemberID, PaymentDate, AmountPaid, PaymentMethod, MembershipYear, InstallmentNumber)
 VALUES
@@ -98,7 +99,8 @@ VALUES
 (9, 9, '2023-01-01', NULL),
 (10, 10, '2020-01-01', NULL),
 (11, 1, '2025-02-13', NULL),
-(12, 1, '2025-02-13', NULL);
+(12, 1, '2025-02-13', NULL),
+(14, 10, '2025-01-01', NULL);
 
 INSERT INTO FamilyGoesTo (FamilyMemberID, LocationID, StartDate, EndDate)
 VALUES
@@ -119,7 +121,7 @@ INSERT INTO FamilyRelation (ClubMemberID, FamilyMemberID, Relationship)
 VALUES
 (1, 1, 'Father'), 
 (2, 2, 'Mother'), 
-(3, 3, 'Grandmother'),
+(3, 1, 'Father'),
 (4, 4, 'Tutor'),
 (5, 5, 'Father'), 
 (6, 6, 'Friend'), 
@@ -128,4 +130,5 @@ VALUES
 (9, 9, 'Other'),
 (10, 10, 'Mother'),
 (11, 11, 'Father'),
-(12, 12, 'Mother');
+(12, 12, 'Mother'),
+(14, 3, 'Other');
