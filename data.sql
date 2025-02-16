@@ -95,7 +95,7 @@ VALUES
 INSERT INTO MemberGoesTo (ClubMemberID, LocationID, StartDate, EndDate)
 VALUES
 (1, 1, '2022-01-01', NULL),
-(2, 1, '2020-01-01', '2024-06-30'),
+(2, 1, '2020-01-01', NULL),
 (3, 3, '2024-01-01', NULL),
 (4, 4, '2023-01-01', NULL),
 (5, 5, '2019-01-01', NULL),
