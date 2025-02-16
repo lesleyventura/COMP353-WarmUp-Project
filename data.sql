@@ -106,6 +106,7 @@ VALUES
 (10, 10, '2020-01-01', NULL),
 (11, 1, '2025-02-13', NULL),
 (12, 1, '2025-02-13', NULL),
+(13, 1, '2023-01-01', NULL),
 (14, 10, '2025-01-01', NULL);
 
 INSERT INTO FamilyGoesTo (FamilyMemberID, LocationID, StartDate, EndDate)
