@@ -23,8 +23,9 @@ VALUES
 ('Sophia', 'Tremblay', '1988-11-02', '012345678', 'M2345678901', '514-222-3333', '404 Walnut St', 'Laval', 'QC', 'H3C3C3', 'sophia.tremblay@myvc.com', 8),
 ('William', 'Gagnon', '1981-06-09', '123456789', 'M3456789012', '438-333-4444', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 'william.gagnon@myvc.com', 9),
 ('Charlotte', 'Roy', '1979-09-21', '234567890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10);
-('Michael', 'Johnson', '1982-04-10', '456175012', 'M6843795345', '514-555-6789', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 'michael.j@email.com', 1),
-('Emily', 'Davis', '1979-11-25', '123396789', 'M1234463960', '514-444-9999', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 'emily.d@email.com', 1);
+('Michael', 'Johnson', '1982-04-10', '456175012', 'M6843795345', '514-555-6789', '789 Pine Ave', 'Montreal', 'QC', 'H3C4E5', 'michael.j@email.com', 1),
+('Emily', 'Davis', '1979-11-25', '123396789', 'M1234463960', '514-444-9999', '321 Oak St', 'Montreal', 'QC', 'H4D5F6', 'emily.d@email.com', 1),
+('John', 'Johns', '1948-12-24', '123124124', 'M2183728373', '124-124-1245', '531 Street St', 'Montreal, 'QC', 'H3A4A4', 'John.J@email.com', 1);  
 
 INSERT INTO ClubMembers (FirstName, LastName, DateOfBirth, Height, Weight, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, FamilyMemberID)
 VALUES
@@ -40,6 +41,7 @@ VALUES
 ('Charlotte', 'Roy', '2012-06-09', 157, 52, '456789012', 'М6789012345', '514-666-7777', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 10);
 ('Liam', 'Johnson', '2011-06-20', 165, 55, '789012093', 'M2637823456', '438-222-3333', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 11),  
 ('Sophia', 'Davis', '2013-09-18', 150, 43, '547567890', 'M2349372501', '438-777-8888', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 12),
+('Jason', 'Bornee', '2008-06-15', 140, 50, '394838888', 'M23828328283', '111-111-1111', '1 Place St', 'Montreal', 'QC', 'H5C 1D1', 13),   
 ('Joe', 'Lewis', '2011-02-19', 167, 60, '576849305', 'M34594720386', '514-859-0693', '349 Surrey St', 'Montreal', 'QC', 'H7S 1L4', 3);
 
 INSERT INTO Payments (ClubMemberID, PaymentDate, AmountPaid, PaymentMethod, MembershipYear, InstallmentNumber)
@@ -58,12 +60,12 @@ VALUES
 (6,'2024-02-05', 25.00, 'Credit Card', 2024, 2),
 (6,'2024-03-05', 25.00, 'Credit Card', 2024, 3),
 (6,'2024-04-05', 50.00, 'Credit Card', 2024, 4),  
-(6,'2024-12-29', 100.00, 'Cash', 2025, 1),
+(6,'2024-12-29', 100.00, 'Cash', 2025, 1);
 
 INSERT INTO Personnel (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, Email, Role, Mandate)
 VALUES
 ('John', 'Doe', '1980-05-10', '123456789', 'M1234567890', '514-111-2222', '123 Main St', 'Montreal', 'QC', 'HIA1A1', 'john.doe@myvc.com', 'General Manager', 'Salaried'),
-(' Jane', 'Smith', '1985-08-12', '234567890', 'M0987654321', '450-222-3333', '456 Elm St', 'Laval', 'QC', 'H2B2B2', 'jane.smith@myvc.com', 'Coach', 'Volunteer'),
+('Jane', 'Smith', '1985-08-12', '234567890', 'M0987654321', '450-222-3333', '456 Elm St', 'Laval', 'QC', 'H2B2B2', 'jane.smith@myvc.com', 'Coach', 'Volunteer'),
 ('Diane', 'Johnson', '1990-02-15', '345678901', 'M1122334455', '438-333-4444', '789 Pine St', 'Brossard', 'QC', 'J4Z3Z3', 'emily.johnson@myvc.com', 'Deputy Manager', 'Salaried'),
 ('Michael', 'Brown', '1975-09-23', '456789012', 'M2233445566', '514-444-5555', '101 Maple Ave', 'Longueuil', 'QC', 'J4H5H5', 'michael.brown@myvc.com', 'Coach', 'Volunteer'),
 ('Sophie', 'Martin', '1988-11-30', '567890123', 'M3344556677', '514-555-6666', '202 Cedar Rd', 'Quebec City', 'QC', 'GIV4V4', 'sophie.martin@myvc.com', 'Deputy Manager', 'Salaried'),
@@ -71,7 +73,9 @@ VALUES
 ('Laura', 'Lefebvre', '1995-12-05', '789012345', 'M5566778899', '819-777-8888', '404 Willow Ln', 'Gatineau', 'QC', 'J8X7X7', 'laura.lefebvre@myvc.com', 'Coach', 'Salaried'),
 ('Patrick', 'Dubois', '1979-04-18', '890123456', 'M6677889900', '819-888-9999', '505 Birch Rd', 'Trois-Rivières', 'QC', 'G8Y8Y8', 'patrick.dubois@myvc.com', 'General Manager', 'Salaried'),
 ('Isabelle', 'Tremblay', '1982-06-25', '901234567', 'M7788990011', '450-999-0000', '606 Spruce Ave', 'Montreal', 'QC', 'HIAZA2', 'isabelle.tremblay@myvc.com', 'Deputy Manager', 'Volunteer'), 
-('Marc', 'Gagnon', '1992-03-14', '012345678', 'M8899001122', '514-000-1111', '707 Redwood St', 'Laval', 'QC', 'H7A3A3', 'marc.gagnon@myvc.com', 'Other', 'Volunteer');
+('Marc', 'Gagnon', '1992-03-14', '012345678', 'M8899001122', '514-000-1111', '707 Redwood St', 'Laval', 'QC', 'H7A3A3', 'marc.gagnon@myvc.com', 'Other', 'Volunteer'),
+('Martin', 'Beau', '1994-06-17', '658204618', 'M4892004720', '514-675-1790', '101 Jean-Talon St', 'Montreal, 'QC', 'H5K26P', 'martin.beau@myvc.com', 'Coach', 'Salaried'),
+('Johnson', 'Do', '1990-02-15', '567890113', 'M7788990015', '819-777-8885', '400 Willow Ln', 'Quebec City', 'QC', 'J1K6K6', 'jogn.do@myvc.com', 'Other', 'Salaried';
 
 INSERT INTO WorksAt (PersonnelID, LocationID, StartDate, EndDate)
 VALUES
@@ -84,7 +88,9 @@ VALUES
 (7, 7, '2024-01-01', '2024-02-28'),
 (8, 8, '2024-01-01', NULL),
 (9, 9, '2023-01-01', NULL),
-(10, 10, '2020-01-01', '2024-06-30');
+(10, 10, '2020-01-01', '2024-06-30'),
+(11, 1, '2019-03-08', NULL),
+(13, 1, '2018-04-09', NULL);
 
 INSERT INTO MemberGoesTo (ClubMemberID, LocationID, StartDate, EndDate)
 VALUES
