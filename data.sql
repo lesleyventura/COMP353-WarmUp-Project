@@ -14,7 +14,7 @@ VALUES
 INSERT INTO FamilyMembers (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, Email, LocationID) 
 VALUES 
 ('Eric', 'Anderson', '1975-02-20', '345678901', 'M5678901234', '514-333-4444', '123 Maple St', 'Montreal', 'QC', 'H1A1A1', 'eric.anderson@email.com', 1),
-('Sarah', 'Williams', '1982-07-15', '456789012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 2),
+('Sarah', 'Williams', '1982-07-15', '456789012', 'M6789012345', '438-444-5555', '789 Oak St', 'Laval', 'QC', 'H2B2B2', 'sarah.williams@myvc.com', 1),
 ('David', 'Smith', '1980-05-30', '567890123', 'M7890123456', '514-555-6666', '456 Pine St', 'Quebec City', 'QC', 'G1V1V1', 'david.smith@myvc.com', 3),
 ('Emily', 'Martin', '1978-08-25', '678901234', 'M8901234567', '450-666-7777', '789 Cedar Rd', 'Sherbrooke', 'QC', 'J1K1K1', 'emily.martin@myvc.com', 4),
 ('Daniel', 'Brown', '1973-10-12', '789012345', 'M9012345678', '819-777-8888', '101 Spruce Ave', 'Gatineau', 'QC', 'J8X8X8', 'daniel.brown@myvc.com', 5),
@@ -52,7 +52,12 @@ VALUES
 (3,'2024-02-15', 50.00, 'Credit Card', 2024, 2),
 (4,'2024-01-20', 100.00, 'Debit Card', 2024, 1),
 (5,'2024-01-25', 25.00, 'Cash', 2024, 1),
-(5,'2024-02-25', 25.00, 'Cash', 2024, 2);
+(5,'2024-02-25', 25.00, 'Cash', 2024, 2),
+(6,'2024-01-05', 25.00, 'Credit Card', 2024, 1),
+(6,'2024-02-05', 25.00, 'Credit Card', 2024, 2),
+(6,'2024-03-05', 25.00, 'Credit Card', 2024, 3),
+(6,'2024-04-05', 50.00, 'Credit Card', 2024, 4),  
+(6,'2024-12-29', 100.00, 'Cash', 2025, 1),
 
 INSERT INTO Personnel (FirstName, LastName, DateOfBirth, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, Email, Role, Mandate)
 VALUES
@@ -83,7 +88,7 @@ VALUES
 INSERT INTO MemberGoesTo (ClubMemberID, LocationID, StartDate, EndDate)
 VALUES
 (1, 1, '2022-01-01', NULL),
-(2, 2, '2020-01-01', '2024-06-30'),
+(2, 1, '2020-01-01', '2024-06-30'),
 (3, 3, '2024-01-01', NULL),
 (4, 4, '2023-01-01', NULL),
 (5, 5, '2019-01-01', NULL),
@@ -98,7 +103,7 @@ VALUES
 INSERT INTO FamilyGoesTo (FamilyMemberID, LocationID, StartDate, EndDate)
 VALUES
 (1, 1, '2024-01-01', NULL),
-(2, 2, '2024-01-15', NULL),
+(2, 1, '2024-01-15', NULL),
 (3, 3, '2023-12-10', '2024-01-10'),
 (4, 1, '2024-01-11', NULL),
 (5, 2, '2024-02-01', NULL),
@@ -113,14 +118,14 @@ VALUES
 INSERT INTO FamilyRelation (ClubMemberID, FamilyMemberID, Relationship)
 VALUES
 (1, 1, 'Father'), 
-(2, 3, 'Grandfather'), 
-(3, 4, 'Grandmother'),
-(4, 5, 'Tutor'),
-(5, 6, 'Partner'), 
-(6, 7, 'Friend'), 
-(7, 8, 'Father'), 
-(8, 9, 'Mother'),
-(9, 10, 'Other'),
-(10, 2, 'Mother'),
+(2, 2, 'Mother'), 
+(3, 3, 'Grandmother'),
+(4, 4, 'Tutor'),
+(5, 5, 'Father'), 
+(6, 6, 'Friend'), 
+(7, 7, 'Father'), 
+(8, 8, 'Mother'),
+(9, 9, 'Other'),
+(10, 10, 'Mother'),
 (11, 11, 'Father'),
 (12, 12, 'Mother');
