@@ -6,7 +6,7 @@ VALUES
 ('Laval Branch','456 Laval St','Laval', 'QC', 'H7A 365', '450-555-5678', 'www.lavalvolleyball.ca', 'Branch', 150),
 ('Brossard Branch', '789 Brossard Ave', 'Brossard', 'QC', 'J4Z 2N2', '450-123-7890', 'www.brossardvolleyball.ca', 'Branch', 120),
 ('Longueuil Branch', '101 Longueuil Rd', 'Longueuil', 'QC', 'J4H 3K6', '450-321-6543', 'www.longueuilvolleyball.ca', 'Branch', 130),
-('Quebec City Branch', '55 Boulevard Laurier', 'Quebec City', 'QC', 'GIV 4T5', '418-555-9999', 'ww.qcvolleyball.ca', 'Branch', 140),
+('Quebec City Branch', '55 Boulevard Laurier', 'Quebec City', 'QC', 'GIV 4T5', '418-555-9999', 'www.qcvolleyball.ca', 'Branch', 140),
 ('Sherbrooke Branch', '222 University St', 'Sherbrooke', 'QC', 'J1K 2R1', '819-888-2222', 'www.sherbrookevolleyball.ca', 'Branch', 110),
 ('Gatineau Branch', '333 Hull Rd', 'Gatineau', 'QC', 'J8X 3X3', '819-777-3333', 'www.gatineauvolleyball.ca', 'Branch', 125),
 ('Trois-Rivières Branch', '777 St-Maurice Blvd', 'Trois-Rivières', 'QC', 'G8Y 4P4', '819-555-7777', 'www.trvolleyball.ca', 'Branch', 135);
@@ -22,10 +22,10 @@ VALUES
 ('James', 'Dubois', '1976-03-18', '901234567', 'M1234567890', '450-999-0000', '303 Birch Rd', 'Montreal', 'QC', 'H1A2B3', 'james.dubois@myvc.com', 7),
 ('Sophia', 'Tremblay', '1988-11-02', '012345678', 'M2345678901', '514-222-3333', '404 Walnut St', 'Laval', 'QC', 'H3C3C3', 'sophia.tremblay@myvc.com', 8),
 ('William', 'Gagnon', '1981-06-09', '123456789', 'M3456789012', '438-333-4444', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 'william.gagnon@myvc.com', 9),
-('Charlotte', 'Roy', '1979-09-21', '234567890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10);
+('Charlotte', 'Roy', '1979-09-21', '234567890', 'M4567890123', '514-111-2222', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 'charlotte.roy@myvc.com', 10),
 ('Michael', 'Johnson', '1982-04-10', '456175012', 'M6843795345', '514-555-6789', '789 Pine Ave', 'Montreal', 'QC', 'H3C4E5', 'michael.j@email.com', 1),
 ('Emily', 'Davis', '1979-11-25', '123396789', 'M1234463960', '514-444-9999', '321 Oak St', 'Montreal', 'QC', 'H4D5F6', 'emily.d@email.com', 1),
-('John', 'Johns', '1948-12-24', '123124124', 'M2183728373', '124-124-1245', '531 Street St', 'Montreal, 'QC', 'H3A4A4', 'John.J@email.com', 1);  
+('John', 'Johns', '1948-12-24', '123124124', 'M2183728373', '124-124-1245', '531 Street St', 'Montreal', 'QC', 'H3A4A4', 'John.J@email.com', 1);  
 
 INSERT INTO ClubMembers (FirstName, LastName, DateOfBirth, Height, Weight, SIN, MedicareNumber, Phone, Address, City, Province, PostalCode, FamilyMemberID)
 VALUES
@@ -36,9 +36,9 @@ VALUES
 ('Lucas', 'Brown', '2007-07-18', 180, 75, '901234567', 'M1234567890', '819-999-0000', '101 Spruce Ave', 'Gatineau', 'QC', 'J8X8X8', 5),
 ('Sophia', 'Lefebvre', '2011-11-30', 162, 58, '012345678', 'M2345678901', '819-222-3333', '202 Willow Ln', 'Trois-Rivières', 'QC', 'G8Y8Y8', 6), 
 ('James', 'Dubois', '2013-02-14', 150, 45,'123456789', 'М3456789012', '450-333-4444', '303 Birch Rd', 'Montreal', 'QC', 'H1A2B3', 7),
-('Ava', 'Tremblay', '2009-08-21', 168, 65, '234567890', 'M4567890123', '514-111-2222', '404 Walnut St', 'Laval', 'QC', 'НЗСЗСЗ', 8),
+('Ava', 'Tremblay', '2009-08-21', 168, 65, '234567890', 'M4567890123', '514-111-2222', '404 Walnut St', 'Laval', 'QC', 'HЗCЗCЗ', 8),
 ('Ethan', 'Gagnon', '2010-12-05', 172, 67, '345678901', 'M5678901234', '438-444-5555', '505 Aspen Rd', 'Longueuil', 'QC', 'J4X4X4', 9),
-('Charlotte', 'Roy', '2012-06-09', 157, 52, '456789012', 'М6789012345', '514-666-7777', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 10);
+('Charlotte', 'Roy', '2012-06-09', 157, 52, '456789012', 'М6789012345', '514-666-7777', '606 Chestnut Ave', 'Drummondville', 'QC', 'J2B5B5', 10),
 ('Liam', 'Johnson', '2011-06-20', 165, 55, '789012093', 'M2637823456', '438-222-3333', '789 Pine Ave', 'Montreal', 'QC', 'H3C 4E5', 11),  
 ('Sophia', 'Davis', '2013-09-18', 150, 43, '547567890', 'M2349372501', '438-777-8888', '321 Oak St', 'Montreal', 'QC', 'H4D 5F6', 12),
 ('Jason', 'Bornee', '2008-06-15', 140, 50, '394838888', 'M23828328283', '111-111-1111', '1 Place St', 'Montreal', 'QC', 'H5C 1D1', 13),   
