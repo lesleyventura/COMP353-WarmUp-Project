@@ -90,7 +90,7 @@ VALUES
 (9, 9, '2023-01-01', NULL),
 (10, 10, '2020-01-01', '2024-06-30'),
 (11, 1, '2019-03-08', NULL),
-(13, 1, '2018-04-09', NULL);
+(12, 1, '2018-04-09', NULL);
 
 INSERT INTO MemberGoesTo (ClubMemberID, LocationID, StartDate, EndDate)
 VALUES
